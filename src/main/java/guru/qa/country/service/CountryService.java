@@ -32,6 +32,7 @@ public class CountryService {
 
     public Country addCountry(@Nonnull Country Country) {
         CountryEntity countryEntity = CountryEntity.fromJson(Country);
+
         return Country.fromEntity(countryRepository.save(countryEntity));
     }
 
@@ -44,6 +45,7 @@ public class CountryService {
                 countryEntity.getCode(),
                 countryEntity.getDateOfIndependence());
         countryRepository.save(countryEntity);
+
         return Country.fromEntity(countryEntity);
     }
 

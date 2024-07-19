@@ -13,7 +13,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 @Entity
-@Table(schema = "db/migration/country")
+@Table(schema = "country")
 @Getter
 @Setter
 @NoArgsConstructor
